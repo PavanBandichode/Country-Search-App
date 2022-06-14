@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+body {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.flex-30 {
+  flex: 0 1 30%;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.justify-content {
+  justify-content: space-between;
+}
+header {
+  padding: 2rem;
+  background-color: blue;
+  color: aliceblue;
+}
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+input {
+  padding: 0.8rem;
+  width: 300px;
+}
+.input-wrapper {
+  margin: 1.6rem;
+  text-align: center;
+}
+.country-card {
+  padding: 0.4rem 0.8rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, rgb(202, 181, 202), rgb(178, 214, 178));
+}
+.country-card h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 6px 3px rgb(138, 121, 121);
+}
+
+.btn {
+  padding: 0.4rem 1rem;
+  color: white;
+  background-color: red;
+  border: none;
+  margin: 0.8rem 0;
+}
+.continents li {
+  padding: 0 0.8rem;
+  color: white;
+  background-color: rgb(213, 163, 70);
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-right: 0.8rem;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+.subheading {
+  font-weight: 500;
+}
+/*filter*/
+.filter {
+  margin: 1rem 0;
+}
+form input {
+  color: white;
+  background-color: rgb(81, 71, 71);
+  font-size: 1.4rem;
+}
+.filter select {
+  width: 200px;
+  height: 1.9rem;
+  color: white;
+  background-color: rgb(81, 71, 71);
+}
+/*country*/
+.country {
+  margin-top: 1rem;
+}
+.country-info {
+  padding: 0.6rem 1rem;
+}
+.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.country .country-card {
+  padding: 1rem;
+}
+.country-card.country-info span {
+  font-weight: 700;
+}
+
+/*Loader*/
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+
+.bouncing-loader {
+  display: flex;
+  justify-content: center;
+}
+
+.bouncing-loader > div {
+  width: 16px;
+  height: 16px;
+  margin: 3rem 0.2rem;
+  background: #8385aa;
+  border-radius: 50%;
+  animation: bouncing-loader 0.6s infinite alternate;
+}
